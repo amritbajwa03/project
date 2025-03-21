@@ -9,9 +9,10 @@
 // Function by the "Send Email" button
 function sendResults() {
   const userName = document.getElementById("userName").value.trim();
-  const userEmail = document.getElementById("userEmail").value.trim();
+  // Retrieve stored email from localStorage
+  const storedEmail = localStorage.getItem('userEmail');
 
-  if (!userName || !userEmail) {
+  if (!userName || !storedEmail) {
       alert("Please enter your name and email before sending results.");
       return;
   }
@@ -24,7 +25,7 @@ function sendResults() {
   // Prepare email parameters
   const emailParams = {
       name: userName,
-      to_email: userEmail,
+      to_email: storedEmail,
       score: window.userScore,  // Using stored global score
       total: window.totalQuestions
   };
