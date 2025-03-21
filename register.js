@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
         createUserWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 alert("Account created successfully!");
+                localStorage.setItem('userEmail', user.email);  // Store email 
                 window.location.href = "home.html";
             })
             .catch((error) => {
