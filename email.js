@@ -28,6 +28,7 @@ function sendResults() {
       to_email: storedEmail,
       score: window.userScore,  // Using stored global score
       total: window.totalQuestions
+      title: window.courseTitle || "Cyber Security Course"
   };
 
   // Send email using EmailJS
