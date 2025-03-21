@@ -10,7 +10,7 @@
   <script src="font.js"></script>
   <script>
     (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "sdGRnYvvnVtSwPrw0j8vh"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
-</script>
+  </script>
 
 </head>
 
@@ -91,16 +91,15 @@
       </div>
 
 
-      <div class="course-list">
-        <div class="course-item">
-          <h2>Ready to test your knowledge?</h2>
-          <a href="intro_test.html" class="course-link">Take the Introduction Quiz</a>
-        </div>
-      </div>
-      
-      
-      
-      
+
+      <h2>Ready to test your knowledge?</h2>
+      <a href="intro_test.html" class="quiz-button">Take the Introduction Quiz</a>
+
+
+
+
+
+
     </section>
 
     <!-- Font Control -->
