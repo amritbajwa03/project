@@ -198,7 +198,7 @@
             resultDiv.innerHTML = `You scored ${score} out of ${answers.length}!`;
 
             // Information for User Progress Page (tracker)
-            const quizTitle = window.courseTitle || "Manipulation Techniques Used by Attackers";
+            const quizTitle = window.courseTitle || "Online Safety";
             const userEmail = localStorage.getItem('userEmail');
             if (userEmail && quizTitle) {
                 const progressKey = `progress_${quizTitle}`;
