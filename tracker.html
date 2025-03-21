@@ -54,14 +54,31 @@
             if (progressItems.length === 0) {
                 container.innerHTML = '<p>No completed quizzes yet.</p>';
             } else {
-                const list = document.createElement('ul');
+                const table = document.createElement('table');
+                table.innerHTML = `
+                <thead>
+                    <tr>
+                    <th>Quiz Title</th>
+                    <th>Latest Score</th>
+                    <th>Completed At</th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+                `;
+
+                const tbody = table.querySelector('tbody');
                 progressItems.forEach(item => {
-                    const listItem = document.createElement('li');
-                    listItem.textContent = `${item.quizTitle} — Latest Score: ${item.latestScore} (Completed on: ${item.completedAt})`;
-                    list.appendChild(listItem);
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+          <td>${item.quizTitle}</td>
+          <td>${item.latestScore}</td>
+          <td>${item.completedAt}</td>
+        `;
+                    tbody.appendChild(row);
                 });
-                container.appendChild(list);
+                container.appendChild(table);
             }
+
         });
     </script>
 </body>
