@@ -32,6 +32,7 @@ submit.addEventListener("click", function (event) {
         .then((userCredential) => {
             // logging in
             const user = userCredential.user;
+            localStorage.setItem('userEmail', user.email);  // Store email 
             alert("Logging in...")
             window.location.href = "home.html";
 
