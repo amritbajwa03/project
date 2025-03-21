@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Education - Online Safety Course</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <script src="font.js"></script>
+  <script>
+    (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "sdGRnYvvnVtSwPrw0j8vh"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+</script>
+
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="quizzes.html">Quizzes</a></li>
+      <li><a href="news.html">Cyber News</a></li>
+      <li><a href="resources.html">Additional Resources</a></li>
+    </ul>
+    <div class="logo-container">
+      <img src="logo.png" alt="Cyber Education Logo" class="small-logo">
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Home Section -->
+    <section id="home" class="welcome-section">
+      <h1>Welcome to Online Safety Course</h1>
+      <p>Learn to how to stay safe online, protect your personal information, and avoid common online threats.</p>
+    </section>
+
+    <section id="courses" class="course-content">
+      <h2>Recognising Online Scams</h2>
+      <p>Common Types of Scams</p>
+      <ul class="aim-list">
+        <li><strong>Online Shopping Scams:</strong> Fake websites or sellers offering items that do not exists.</li>
+        <li><strong>Tech Support Scams:</strong> Attackers pretending to be from well known companies, claiming your
+          device is infected.</li>
+        <li><strong>Investment Scams:</strong> Promises of high returns with no risk.</li>
+      </ul>
+
+      <p><strong>How to Stay Safe</strong></p>
+      <ul class="aim-list">
+        <li>Shop on trusted websites</li>
+        <li>Look for spelling mistakes or unusual language.</li>
+        <li>Be sceptical of unsolicited phone calls offering tech support.</li>
+        <li>Never transfer money to people you don't know.</li>
+      </ul>
+
+      <div class="info-box">
+      <h2>Protecting Your Data and Devices</h2>
+      <ul class="aim-list">
+        <li>Install antivirus software.</li>
+        <li>Enable automatic updates for your operating system and apps.</li>
+        <li>Use a secure home Wi-Fi network which has a strong password.</li>
+        <li>Regular back up important files to an external hard drive or cloud service.</li>
+        <li>Test back ups to ensure you can restore your data if needed.</li>
+      </ul>
+    </div>
+
+      <h2>Safe Online Browsing</h2>
+      <p><strong>Identifying Secure Websites</strong></p>
+      <ul class="aim-list">
+        <li>Look for 'https://' and a padlocl symbol in the address bar of the browser.</li>
+        <li>Be cautious of websites with strange domain names and spelling errors.</li>
+      </ul>
+
+      <p><strong>Browser Settings</strong></p>
+      <ul class="aim-list">
+        <li>Enable enhanced security in your browser settings.</li>
+        <li>Block pop-ups and enable anti-phishing filters.</li>
+      </ul>
+
+    </section>
+
+
+
+      <h1>Can You Spot the Real Amazon Website?</h1>
+      <p>Click on the image that you think is the legitimate Amazon website.</p>
+
+      <div class="container">
+        <div class="image-container" onclick="checkAnswer(true)">
+          <img src="realamazonwebsite.png" alt="Real Amazon Website">
+        </div>
+        <div class="image-container" onclick="checkAnswer(false)">
+          <img src="fakeamazonwebsite.png" alt="Fake Amazon Website">
+        </div>
+      </div>
+
+      <p id="feedback" class="result"></p>
+
+    
+  </main>
+
+  <!-- Font Control -->
+  <div id="font-controls">
+    <button onclick="changeFontSize('increase')">A+</button>
+    <button onclick="changeFontSize('decrease')">A-</button>
+    <button onclick="changeFontSize('reset')">Reset</button>
+  </div>
+
+</body>
+
+</html>

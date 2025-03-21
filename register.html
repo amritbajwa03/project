@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Education for Seniors</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="login.js" defer></script>
+  <script src="font.js"></script>
+  <script>
+    (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "sdGRnYvvnVtSwPrw0j8vh"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+</script>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <ul>
+      <h1>Welcome to Cyber Education for Seniors</h1>
+    </ul>
+    <div class="logo-container">
+      <img src="logo.png" alt="Cyber Education Logo" class="small-logo">
+    </div>
+  </nav>
+
+
+    <!-- Register Section -->
+    <div class="login-container">
+    <section class="login-section">
+        <h2>Register Here</h2>
+        <form action="register.html">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+            <button id="submit" type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login here</a>.</p>
+    </section>
+
+    <!-- Information Section -->
+    <section class="login-box">
+        <h1>Why Register?</h1>
+        <h3>By registering, you'll gain access to interactive courses, real-world simulations, quizzes, and latest cyber news to enhance your digital skills. Stay one step ahead of online threats and enjoy the internet with peace of mind!</h3>
+      </section>
+    </div>
+
+
+    <!-- Font Control -->
+    <div id="font-controls">
+        <button onclick="changeFontSize('increase')">A+</button>
+        <button onclick="changeFontSize('decrease')">A-</button>
+        <button onclick="changeFontSize('reset')">Reset</button>
+      </div>
+
+</body>
+
+</html>

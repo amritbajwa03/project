@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Education - Introduction Course</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <script src="font.js"></script>
+  <script>
+    (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "sdGRnYvvnVtSwPrw0j8vh"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+</script>
+
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="quizzes.html">Quizzes</a></li>
+      <li><a href="news.html">Cyber News</a></li>
+      <li><a href="resources.html">Additional Resources</a></li>
+    </ul>
+    <div class="logo-container">
+      <img src="logo.png" alt="Cyber Education Logo" class="small-logo">
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Home Section -->
+    <section id="home" class="welcome-section">
+      <h1>Welcome to Introduction to Cyber Security</h1>
+      <p>Learn about common cyber threats and key cyber security terms.</p>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="course-content">
+      <h2>What is Cyber Security?</h2>
+      <div class="definition">
+        <p><strong>Definition:</strong> Cybersecurity is the practice of protecting systems, networks, and programs from
+          digital attacks.</p>
+      </div>
+
+      <h3>The Aim of Cyber Security:</h3>
+      <ul class="aim-list">
+        <li><strong>Confidentiality</strong> - Keeping personal information private.</li>
+        <li><strong>Integrity</strong> - Ensuring data is accurate and not modified.</li>
+        <li><strong>Availability</strong> - Making sure services and data are accessible when required.</li>
+      </ul>
+
+      <h2>Why is Cyber Security Important?</h2>
+      <p>We live in a digital age where everyone is vulnerable to cyber attacks. Cyber security protects your personal
+        information, prevents identity theft, and avoids financial loss.</p>
+
+      <h2>Common Cyber Threats</h2>
+
+      <div class="info-box">
+        <h4>Malware</h4>
+        <p>Malware, short for ‘malicious software,’ includes harmful software like viruses, trojans, and spyware. It can
+          steal information or cause damage.</p>
+
+        <h4>Types of Malware:</h4>
+        <ul class="threat-list">
+          <li><strong>Viruses</strong> - Attach themselves to legitimate files and spread.</li>
+          <li><strong>Trojans</strong> - Disguised as safe programs but can harm your device.</li>
+          <li><strong>Spyware</strong> - Secretly records your activity, like keystrokes.</li>
+        </ul>
+
+        <h4>How to Prevent Malware Attacks:</h4>
+        <ul class="prevention-list">
+          <li>Avoid opening email attachments from unknown sources.</li>
+          <li>Install and update antivirus software.</li>
+          <li>Be cautious on suspicious websites.</li>
+        </ul>
+      </div>
+
+      <h2>Key Cyber Security Terms</h2>
+      <div class="terms-section">
+        <ul class="terms-list">
+          <li><strong>Encryption</strong> - Protects data by scrambling it, readable only with the correct key.</li>
+          <li><strong>Antivirus Software</strong> - Detects, blocks, and removes malware.</li>
+          <li><strong>Two-Factor Authentication (2FA)</strong> - Adds a second layer of security for account access.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Font Control -->
+    <div id="font-controls">
+      <button onclick="changeFontSize('increase')">A+</button>
+      <button onclick="changeFontSize('decrease')">A-</button>
+      <button onclick="changeFontSize('reset')">Reset</button>
+    </div>
+  </main>
+
+</body>
+
+</html>

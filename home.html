@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Education for Seniors</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <script src="font.js"></script>
+  <script>
+    (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "sdGRnYvvnVtSwPrw0j8vh"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+  </script> 
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="quizzes.html">Quizzes</a></li>
+      <li><a href="news.html">Cyber News</a></li>
+      <li><a href="resources.html">Additional Resources</a></li>
+    </ul>
+    <div class="logo-container">
+      <img src="logo.png" alt="Cyber Education Logo" class="small-logo">
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+      <h1>Welcome to Cyber Education for Seniors</h1>
+      <p>Empowering you with the knowledge to stay safe online. Explore our courses, take quizzes, and stay updated with
+        the latest in cyber security news.</p>
+    </section>
+
+
+
+    <!-- Courses Section -->
+    <section class="courses-section">
+      <h2>Courses</h2>
+      <p>Choose from a variety of courses designed to improve your cyber security awareness.</p>
+      <div class="course-links">
+        <a href="courses.html">Click here to start learning</a>
+      </div>
+    </section>
+
+    <!-- Quizzes Section -->
+    <section class="quizzes-section">
+      <h2>Quizzes</h2>
+      <p>Test your knowledge and reinforce what you’ve learned with our interactive quizzes.</p>
+      <a href="quizzes.html" class="cta-button">Go to Quizzes</a>
+    </section>
+
+    <!-- Cyber News Section -->
+    <section class="news-section">
+      <h2>Cyber News</h2>
+      <p>Stay informed with the latest news in cyber security.</p>
+      <a href="news.html" class="cta-button">Read Cyber News</a>
+    </section>
+
+
+    <!-- Font Control -->
+    <div id="font-controls">
+      <button onclick="changeFontSize('increase')">A+</button>
+      <button onclick="changeFontSize('decrease')">A-</button>
+      <button onclick="changeFontSize('reset')">Reset</button>
+    </div> 
+
+
+
+  </main>
+
+
+
+
+</body>
+
+</html>

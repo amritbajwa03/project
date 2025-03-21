@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Education - Password Course</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="font.js"></script>
+    <script>
+        (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "sdGRnYvvnVtSwPrw0j8vh"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+    </script>
+
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="quizzes.html">Quizzes</a></li>
+            <li><a href="news.html">Cyber News</a></li>
+            <li><a href="resources.html">Additional Resources</a></li>
+        </ul>
+        <div class="logo-container">
+            <img src="logo.png" alt="Cyber Education Logo" class="small-logo">
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="welcome-section">
+            <h1>Welcome to Understanding Manipulation Techniques Used by Attackers</h1>
+            <p>Learn how to create and manage strong passwords to protect your accounts.</p>
+        </section>
+
+        <!-- Courses Section -->
+        <section id="courses" class="course-content">
+            <h2>What is Manipulation in Cyber Security?</h2>
+            <div class="definition">
+                <p><strong>Definition:</strong> Manipulation in cyber security is the tactics attackers use to deceive
+                    individuals into revealing sensitive information, taking harmful actions, or giving access to
+                    protected systems. Attackers often exploit human psychology rather than technical vulnerabilities.
+                </p>
+            </div>
+
+            <h3>Types of manipulation used in cyber attacks:</h3>
+            <ul class="aim-list">
+                <li><strong>Psychological manipulation</strong> - Exploiting emotions such as fear, trust, or urgency.
+                </li>
+                <li><strong>Technical manipulation</strong> - Using deceptive techniques like fake websites or malware.
+                </li>
+            </ul>
+
+
+            <div class="info-box">
+                <h4>Example</h4>
+                <p>An attacker sends an email pretending to be from a bank, asking the victim to verify their account
+                    details by clicking on a malicious link.</p>
+            </div>
+
+            <h2>Impersonation and Pretexting</h2>
+            <ul>
+                <li><strong>Impersonation:</strong> Attackers pretend to be trusted figures to gain access to
+                    information.</li>
+                <p>Example: IT support scams, CEO fraud, law enforcement scams.</p>
+                <li><strong>Pretexting:</strong> Creating a fake scenario to obtain information.</li>
+                <p>Example: An attacker calls a helpdesk pretending to be an employee who lost access to their account.
+                </p>
+            </ul>
+
+            <h2>Fear, Urgency, and Authority</h2>
+            <p>Fear and urgency are used to manipulate victims into making rushed decisions.</p>
+            <div class="example-box">
+                <p>For Example:</p>
+                <ul>
+                    <li>“Your account will be deactivated in 24 hours unless you verify your details.”</li>
+                    <li>“You owe unpaid taxes! Pay immediately to avoid arrest.”</li>
+                </ul>
+            </div>
+
+            <h2>Reciprocity, Trust, and Guilt</h2>
+            <ul>
+                <li><strong>Reciprocity:</strong> Offering fake free trials, discounts, or giveaways to gain trust.</li>
+                <li><strong>Trust:</strong> Attackers use familiar brands, people, or fake testimonials.</li>
+                <li><strong>Guilt:</strong> Fake charities manipulating victims into donating.</li>
+            </ul>
+
+            <h2>Malicious Links and Fake Websites</h2>
+            <p>Attackers use spoofed websites that look identical to real ones to steal login credentials.</p>
+            <ul>
+                <li><strong>Typosquatting:</strong> Registering domains like "paypa1.com" instead of "paypal.com".</li>
+                <li><strong>Homoglyph attacks:</strong> Using similar looking letters, e.g., “g00gle.com” instead of
+                    “google.com”.</li>
+            </ul>
+
+            <h2>Deepfakes, AI Manipulation, and Social Engineering</h2>
+            <p>Attackers are now using AI-generated deepfake videos and voice cloning to impersonate executives,
+                politicians, and even family members.</p>
+
+            <h3>How Hackers Use Social Media for Attacks</h3>
+            <p>Attackers harvest personal data from platforms like Facebook and LinkedIn to make scams more convincing.
+            </p>
+            <div class="info-box">
+                <ul>
+                    <li>Public profiles make spear phishing easier.</li>
+                    <li>Photos of work ID badges can be exploited.</li>
+                </ul>
+            </div>
+
+            <!-- Font Control -->
+            <div id="font-controls">
+                <button onclick="changeFontSize('increase')">A+</button>
+                <button onclick="changeFontSize('decrease')">A-</button>
+                <button onclick="changeFontSize('reset')">Reset</button>
+            </div>
+    </main>
+
+</body>
+
+</html>

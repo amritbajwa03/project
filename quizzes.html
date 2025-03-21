@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Education - Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="font.js"></script>
+  <script>
+    (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "sdGRnYvvnVtSwPrw0j8vh"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+</script>
+
+</head>
+
+<body>
+
+  <!-- Navigation Bar  -->
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="quizzes.html">Quizzes</a></li>
+      <li><a href="news.html">Cyber News</a></li>
+      <li><a href="resources.html">Additional Resources</a></li>
+    </ul>
+    <div class="logo-container">
+      <img src="logo.png" alt="Cyber Education Logo" class="small-logo">
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <section id="quizzes" class="section">
+      <h1>Our Quizzes</h1>
+      <p>Explore our quizzes based on the courses.</p>
+
+      <div class="course-list">
+        <div class="course-item">
+          <h2>Introduction to Cyber Security</h2>
+          <p>Test your knowledge including key concepts and best practices.</p>
+          <a href="intro_test.html" class="course-link">Start Test</a>
+        </div>
+
+        <div class="course-item">
+          <h2>Phishing Awareness</h2>
+          <p>Test your knowledge on how to identify and avoid phishing attacks.</p>
+          <a href="phishing_test.html" class="course-link">Start Test</a>
+        </div>
+
+        <div class="course-item">
+          <h2>Password Management</h2>
+          <p>Test your knowledge on how to create and manage strong passwords to protect your accounts.</p>
+          <a href="password_test.html" class="course-link">Start Test</a>
+        </div>
+
+        <div class="course-item">
+          <h2>Online safety</h2>
+          <p>Test your knowledge on how to stay safe online, protect your personal information, and avoid common online threats.</p>
+          <a href="online_test.html" class="course-link">Start Test</a>
+        </div>
+
+        <div class="course-item">
+          <h2>Staying Safe on Public Wi-Fi</h2>
+          <p>Test your knowledge on how to use public Wi-Fi safely and protect your data.</p>
+          <a href="wifi_test.html" class="course-link">Start Test</a>
+        </div>
+
+        <div class="course-item">
+          <h2>Understanding Manipulation Techniques Used by Attackers</h2>
+          <p>Test your knowledge on how to identify common psychological and technical manipulation techniques used by attackers.</p>
+          <a href="manipulation_test.html" class="course-link">Start Test</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Font Control -->
+  <div id="font-controls">
+    <button onclick="changeFontSize('increase')">A+</button>
+    <button onclick="changeFontSize('decrease')">A-</button>
+    <button onclick="changeFontSize('reset')">Reset</button>
+  </div>
+
+
+</body>
+
+</html>

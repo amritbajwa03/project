@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Education - Phishing Course</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="font.js"></script>
+  <script>
+    (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "sdGRnYvvnVtSwPrw0j8vh"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+</script>
+
+
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="quizzes.html">Quizzes</a></li>
+      <li><a href="news.html">Cyber News</a></li>
+      <li><a href="resources.html">Additional Resources</a></li>
+
+    </ul>
+    <div class="logo-container">
+      <img src="logo.png" alt="Cyber Education Logo" class="small-logo">
+    </div>
+  </nav>
+  <!-- Main Content -->
+  <main>
+    <section class="course-content">
+      <h1>Phishing Awareness</h1>
+      <p>Phishing is a common type of cyber attack where attackers try to trick you into giving away personal
+        information like passwords, bank details, or credit card numbers. These attacks are often carried out through
+        fake emails, messages, or phone calls that appear legitimate.</p>
+
+      <h2>How to Identify a Phishing Attempt</h2>
+      <ul>
+        <li><strong>Suspicious Sender:</strong> Check if the sender's email address looks strange or unfamiliar.</li>
+        <li><strong>Urgent or Scary Messages:</strong> Be cautious of messages that create a sense of urgency, such as
+          "Your account will be locked" or "Immediate action required!"</li>
+        <li><strong>Links and Attachments:</strong> Avoid clicking on links or downloading attachments from unknown
+          sources.</li>
+        <li><strong>Spelling and Grammar Mistakes:</strong> Phishing messages often contain spelling errors or poor
+          grammar.</li>
+      </ul>
+
+      <h2>Can You Spot the Real Email?</h2>
+      <p>Below are two emails. One is real, and the other is a phishing attempt. Click on the email you think is
+        legitimate.</p>
+
+      <div class="email-option" id="email-1">
+        <h3>Email 1</h3>
+        <p><strong>Subject:</strong> Urgent! Your Account Will Be Locked!</p>
+        <p><strong>From:</strong> support@securebank123.com</p>
+        <p>Dear Customer,</p>
+        <p>We noticed unusual activity in your account. Please verify your account details immediately to avoid
+          suspension.</p>
+        <p><a href="#">Click here to verify your account</a></p>
+      </div>
+
+      <div class="email-option" id="email-2">
+        <h3>Email 2</h3>
+        <p><strong>Subject:</strong> Your Monthly Statement is Ready</p>
+        <p><strong>From:</strong> statement@yourbank.com</p>
+        <p>Dear Valued Customer,</p>
+        <p>Your latest monthly statement is ready to view. Please log in to your account to access it.</p>
+        <p><a href="#">Log in to your account</a></p>
+      </div>
+
+      <div id="real-email-feedback" class="feedback-message"></div>
+
+
+
+
+      <h2>Examples of Common Phishing Scams</h2>
+      <ul>
+        <li><strong>Banking Scams:</strong> Fake emails claiming to be from your bank, asking you to verify your
+          account.</li>
+        <li><strong>Delivery Scams:</strong> Messages from fake delivery services asking for additional payment or
+          confirmation of your details.</li>
+        <li><strong>Tech Support Scams:</strong> Calls or emails claiming your computer has a virus and asking for
+          remote access.</li>
+        <li><strong>Charity Scams:</strong> Fake charity requests asking for donations, especially during crises.</li>
+      </ul>
+
+      <h2>What to Do If You Receive a Suspicious Message</h2>
+      <ul>
+        <li>Do not click on any links or download attachments.</li>
+        <li>Verify the sender's identity by contacting the organisation directly using a trusted phone number or
+          website.</li>
+        <li>Delete the message if you are unsure.</li>
+        <li>Report phishing emails to your email provider or relevant authorities.</li>
+      </ul>
+
+      <h2>Protecting Yourself from Phishing</h2>
+      <ul>
+        <li>Use a strong and unique password for each account.</li>
+        <li>Enable two-factor authentication (2FA) wherever possible.</li>
+        <li>Keep your computer and software up to date.</li>
+        <li>Be cautious when sharing personal information online.</li>
+      </ul>
+
+
+      <h2>Example of a Phishing Email</h2>
+      <p>Click the parts of the email you think are suspicious</p>
+
+      <div class="email-simulation">
+        <p><strong>From:</strong> <span class="clickable" id="sender">support@mybank-secure.com</span></p>
+        <p><strong>Subject:</strong> <span class="clickable" id="subject-line">Urgent: Verify Your Account</span></p>
+        <p>Dear Customer,</p>
+        <p>Your account has been temporarily suspended due to suspicious activity. Please <span class="clickable"
+            id="verify-link">click here to verify your account</span> immediately.</p>
+        <p>Thank you,<br>The Bank Team</p>
+      </div>
+
+      <div id="email-feedback" class="feedback-message"></div>
+
+
+
+    </section>
+  </main>
+
+  <!-- Font Control -->
+  <div id="font-controls">
+    <button onclick="changeFontSize('increase')">A+</button>
+    <button onclick="changeFontSize('decrease')">A-</button>
+    <button onclick="changeFontSize('reset')">Reset</button>
+  </div>
+</body>
+
+</html>

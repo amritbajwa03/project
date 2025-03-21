@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Education - News</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="font.js"></script>
+    <script>
+        (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "sdGRnYvvnVtSwPrw0j8vh"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+    </script>
+
+</head>
+
+<body>
+
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="quizzes.html">Quizzes</a></li>
+            <li><a href="news.html">Cyber News</a></li>
+            <li><a href="resources.html">Additional Resources</a></li>
+        </ul>
+        <div class="logo-container">
+            <img src="logo.png" alt="Cyber Education Logo" class="small-logo">
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <h2>December 2024</h2>
+        <p>In December 2024, new cyber threats emerged, targeting individuals in the UK, especially seniors. Staying informed can help protect you and your personal information from scams and cyber attacks.</p>
+    </div>
+
+    <div class="news-section">
+        <h3>🎄Christmas Phishing Emails🎄</h3>
+        <p>As Christmas approaches, scammers are sending fake holiday emails containing promotional discounts. These emails often contain malicious links which can steal your personal information. Avoid clicking on unknown links and verify the deals on offical websites.</p>
+    </div>
+
+    <div class="news-section">
+        <h3>Gift Card Scams</h3>
+        <p>Scammers are creating fake social media posts and adverts which are offering free gift cards for major retailers like Amazon, Tesco and M&S. Be cautious of 'too good to be true' deals and only purchase gift cards from offical retailers</p>
+    </div>
+
+    <div class="news-section">
+        <h3>Account Verification Scams</h3>
+        <p>Several people have reported receiving emails or phone calls claiming to be from their banks, asking them to verify their account details due to 'suspicious activity'. Banks will never ask for you PIN or password over the phone or email. If in doubt, contact your bank directly using the number on their official website</p>
+    </div>
+
+    <!-- Font Control -->
+    <div id="font-controls">
+        <button onclick="changeFontSize('increase')">A+</button>
+        <button onclick="changeFontSize('decrease')">A-</button>
+        <button onclick="changeFontSize('reset')">Reset</button>
+      </div>
+</body>
+</html>
+
+

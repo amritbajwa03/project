@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Education for Seniors</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="font.js"></script>
+    <script>
+        (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "sdGRnYvvnVtSwPrw0j8vh"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+    </script>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="quizzes.html">Quizzes</a></li>
+            <li><a href="news.html">Cyber News</a></li>
+            <li><a href="resources.html">Additional Resources</a></li>
+
+        </ul>
+        <div class="logo-container">
+            <img src="logo.png" alt="Cyber Education Logo" class="small-logo">
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="welcome-section">
+            <h1>Welcome to Additional Resources</h1>
+            <p>The videos below have been carefully chosen to support and enhance understanding of key topics. These
+                videos serve as supplementary learning materials, offering visual explanations and insights to reinforce
+                key concepts.</p>
+        </section>
+
+
+        <section id="courses" class="course-content">
+            <h3>What is Cyber Security? How You Can Protect Yourself from Cyber Attacks</h3>
+            <iframe width="700" height="350" src="https://www.youtube.com/embed/88-FENio9Yw">
+            </iframe>
+
+            <h3>Pause, think and act - Cyber security awareness video - Security Quotient</h3>
+            <iframe width="700" height="350" src="https://www.youtube.com/embed/JpfEBQn2CjM">
+            </iframe>
+
+            <h3>What is phishing? Learn how this attack works</h3>
+            <iframe width="700" height="350" src="https://www.youtube.com/embed/Y7zNlEMDmI4">
+            </iframe>
+
+            <h3>11 Internet Safety Tips for Your Online Security</h3>
+            <iframe width="700" height="350" src="https://www.youtube.com/embed/aO858HyFbKI">
+            </iframe>
+
+            <h3>What is Social Engineering?</h3>
+            <iframe width="700" height="350" src="https://www.youtube.com/embed/uvKTMgWRPw4">
+            </iframe>
+
+            <h3>Security Dangers of Public Wi-Fi</h3>
+            <iframe width="700" height="350" src="https://www.youtube.com/embed/XcghUy-8VRA">
+            </iframe>
+
+
+
+        </section>
+        <!-- Font Control -->
+        <div id="font-controls">
+            <button onclick="changeFontSize('increase')">A+</button>
+            <button onclick="changeFontSize('decrease')">A-</button>
+            <button onclick="changeFontSize('reset')">Reset</button>
+        </div>
+
+    </main>
+</body>

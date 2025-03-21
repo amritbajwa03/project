@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Education - Wi-Fi Course</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="font.js"></script>
+    <script>
+        (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "sdGRnYvvnVtSwPrw0j8vh"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="quizzes.html">Quizzes</a></li>
+            <li><a href="news.html">Cyber News</a></li>
+            <li><a href="resources.html">Additional Resources</a></li>
+        </ul>
+        <div class="logo-container">
+            <img src="logo.png" alt="Cyber Education Logo" class="small-logo">
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="welcome-section">
+            <h1>Welcome to Staying Safe on Public Wi-Fi</h1>
+            <p>Learn how to use public Wi-Fi safely and protect your data.</p>
+        </section>
+
+        <section id="courses" class="course-content">
+            <h2>Understanding the Risks of Public Wi-Fi</h2>
+            <p><strong>What is Public Wi-Fi?</strong></p>
+            <div class="definition">
+                <p>Public Wi-Fi is wireless internet networks available in public areas. Public Wi-Fi is open to
+                    everyone which makes it more vulnerable to security threats.</p>
+            </div>
+
+
+            <div class="example-box">
+                <h4>Dangers of Public Wi-Fi</h4>
+                <ul class="aim-list">
+                    <li><strong>Unencrypted Connections:</strong> Many public Wi-Fi networks do not use encryption, this
+                        means your data can be intercepted.</li>
+                    <li><strong>Man-in-the-Middle Attacks:</strong> Hackers can position themselves between you and the
+                        Wi-Fi network to steal your data.</li>
+                    <li><strong>Fake Wi-Fi Hotspots:</strong> Cybercriminals create fake networks with familiar names
+                        (e.g., "Free Airport Wi-Fi") to lure users into connecting.</li>
+                    <li><strong>Session Hijacking:</strong> Attackers can steal cookies from your browsing session and
+                        gain access to your accounts.</li>
+                    <li><strong>Data Snooping:</strong> Hackers can monitor and record what you are doing online.</li>
+                </ul>
+            </div>
+
+            <h3>Best Practices for Public Wi-Fi</h3>
+            <p>Always ask staff for the correct Wi-Fi name before connecting.</p>
+            <p>Avoid accessing sensitive accounts such as online banking, email, and social media.</p>
+            <p>Look for HTTPS websites when entering personal details; the “S” means secure encryption.</p>
+            <p>Turn off automatic Wi-Fi connections in your device settings to prevent unwanted connections.</p>
+            <p>Forget the network after using public Wi-Fi to avoid reconnecting automatically.</p>
+
+
+
+            <div class="info-box">
+                <p><strong>Use a Virtual Private Network (VPN)</strong></p>
+                <p>A VPN encrypts your internet traffic, which makes it difficult for hackers to intercept your data.
+                </p>
+                <p>If you frequently use public Wi-Fi, consider using a VPN for extra security.</p>
+                <p><strong>Enable Two-Factor Authentication (2FA)</strong></p>
+                <p>2FA adds an extra layer of security to your online accounts as it requires an additional verification
+                    step.</p>
+                <p>This means that even if a hacker gains access to your password, they won’t be able to log in without
+                    the second authentication step.</p>
+            </div>
+
+            <h3>Additional Security Measures</h3>
+            <p><strong>Adjust Your Device Settings</strong></p>
+            <ul class="aim-list">
+                <li><strong>Disable File Sharing:</strong> Turn off file sharing in your device’s settings to prevent
+                    unwanted access.</li>
+                <li><strong>Use a Firewall:</strong> Ensure your firewall is enabled so that malicious traffic is
+                    blocked.</li>
+                <li><strong>Software Updated</strong> Always update your operating system and apps to fix security
+                    vulnerabilities.</li>
+            </ul>
+
+            <p><strong>Use Your Mobile Data Instead</strong></p>
+            <ul class="aim-list">
+                <li>If you need to access sensitive accounts, use your mobile network (4G/5G) instead of public Wi-Fi.
+                    Mobile networks are generally more secure.</li>
+            </ul>
+
+            <p><strong>Turn Off Bluetooth and Wi-Fi When Not in Use</strong></p>
+            <ul class="aim-list">
+                <li>Hackers can exploit Bluetooth and Wi-Fi connections to access your device.</li>
+                <li>Disable these features when you don’t need them.</li>
+            </ul>
+
+            <h3>Recognising Public Wi-Fi Scams</h3>
+            <p><strong>Signs of Fake Public Wi-Fi</strong></p>
+            <ul class="aim-list">
+                <li><strong>Unusual Network Names:</strong> If you see multiple similar networks, avoid them.</li>
+                <li><strong>No Password Required:</strong> A legitimate Wi-Fi network usually requires a password.</li>
+                <li><strong>Pop-ups Asking for Personal Information:</strong> Never enter personal details to access
+                    free Wi-Fi.</li>
+            </ul>
+
+
+
+
+            <div class="info-box">
+                <p><strong>What to Do If You Suspect a Public Wi-Fi Scam</strong></p>
+                <ul class="aim-list">
+                    <li>Disconnect immediately if you feel something is suspicious.</li>
+                    <li>Avoid entering login credentials or payment details.</li>
+                    <li>Report suspicious networks to the business providing the Wi-Fi.</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <!-- Font Control -->
+        <div id="font-controls">
+            <button onclick="changeFontSize('increase')">A+</button>
+            <button onclick="changeFontSize('decrease')">A-</button>
+            <button onclick="changeFontSize('reset')">Reset</button>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Education - News</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="font.js"></script>
+  <script>
+    (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "sdGRnYvvnVtSwPrw0j8vh"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+</script>
+
+</head>
+
+<body>
+
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="quizzes.html">Quizzes</a></li>
+      <li><a href="news.html">Cyber News</a></li>
+      <li><a href="resources.html">Additional Resources</a></li>
+    </ul>
+    <div class="logo-container">
+      <img src="logo.png" alt="Cyber Education Logo" class="small-logo">
+    </div>
+  </nav>
+
+  <div class="main-content">
+    <h2>October 2024</h2>
+    <p>In October 2024, there were several cyber threats which targeted individuals in the UK. Having awareness of these
+      scams is important in order to protect yourself.</p>
+  </div>
+
+  <div class="news-section">
+    <h3>Fake DVLA Emails</h3>
+    <p>Scammers sent emails pretending to be the DVLA claiming that vehicle tax payments had failed. These emails
+      included links which steal personal and financial information. DVLA and National Cyber Security Centre have
+      emphasised that they will never request bank details via email or text message. If you do receive an email, do not
+      click on any links and report it to report@phishing.gov.uk.</p>
+  </div>
+
+  <div class="news-section">
+    <h3>Fake Driving Instructors</h3>
+    <p>Individuals are posing as driving instructors or schools, offering services and collecting payment information
+      but not providing any lessons. This scam takes advantage of the high demand for driving tests. Make sure to always
+      verify the credentials of the driving instructor before making any payments.</p>
+  </div>
+
+  <div class="news-section">
+    <h3>Winter Fuel Payments</h3>
+    <p>Scammers sent out text messages which claimed to offer winter fuel payments from the UK government. The aim of
+      these text messages is to steal personal and financial information. The government would never send this type of
+      text message. If you receive any suspicious texts, do not respond or click any links. Forward the message to 7726
+      to report it.</p>
+  </div>
+
+  <!-- Font Control -->
+  <div id="font-controls">
+    <button onclick="changeFontSize('increase')">A+</button>
+    <button onclick="changeFontSize('decrease')">A-</button>
+    <button onclick="changeFontSize('reset')">Reset</button>
+  </div>
+
+
+</body>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Education - News</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="font.js"></script>
+    <script>
+        (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "sdGRnYvvnVtSwPrw0j8vh"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+    </script>
+
+</head>
+
+<body>
+
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="quizzes.html">Quizzes</a></li>
+            <li><a href="news.html">Cyber News</a></li>
+            <li><a href="resources.html">Additional Resources</a></li>
+        </ul>
+        <div class="logo-container">
+            <img src="logo.png" alt="Cyber Education Logo" class="small-logo">
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <h2>November 2024</h2>
+        <p>In November 2024, several new cyber threats targeted individuals in the UK. Staying aware of these scams is
+            crucial to protect yourself and your information.</p>
+    </div>
+
+    <div class="news-section">
+        <h3>Parcel Delivery Scams</h3>
+        <p>Scammers are sending fake delivery texts pretending to be from Royal Mail or courier companies. The texts
+            claim you need to pay a small fee to release your parcel. Avoid clicking any links, and report suspicious
+            messages</p>
+    </div>
+
+    <div class="news-section">
+        <h3>Fake Online Shopping Discounts</h3>
+        <p>Scammers are sending fake emails and adverts offering discounts for popular retailers. These links lead to
+            fraudulent websites that steal your credit card details. Always verify discount offers on the official
+            retailer’s website before making a purchase.</p>
+    </div>
+
+    <div class="news-section">
+        <h3>Windows Security Update Warning</h3>
+        <p>A critical Windows update was released to protect against a security vulnerability. Make sure your device is
+            up to date by checking for updates in your Settings > Windows Update menu.</p>
+    </div>
+
+    <!-- Font Control -->
+    <div id="font-controls">
+        <button onclick="changeFontSize('increase')">A+</button>
+        <button onclick="changeFontSize('decrease')">A-</button>
+        <button onclick="changeFontSize('reset')">Reset</button>
+      </div>
+
+
+</body>    
