@@ -197,6 +197,22 @@
             const resultDiv = document.getElementById('result');
             resultDiv.innerHTML = `You scored ${score} out of ${answers.length}!`;
 
+            // Information for User Progress Page (tracker)
+            const quizTitle = window.courseTitle || "Manipulation Techniques Used by Attackers";
+            const userEmail = localStorage.getItem('userEmail');
+            if (userEmail && quizTitle) {
+                const progressKey = `progress_${quizTitle}`;
+                const progressData = {
+                    email: userEmail,
+                    quizTitle: quizTitle,
+                    latestScore: `${score} out of ${answers.length}`,
+                    completedAt: new Date().toLocaleString()
+                };
+                localStorage.setItem(progressKey, JSON.stringify(progressData));
+            }
+
+            
+
             // Store the score globally so it can be used when sending an email
             window.userScore = score;
             window.totalQuestions = answers.length;
