@@ -745,5 +745,24 @@ table tr:nth-child(even) {
   transform: scale(1.05);
 }
 
+.quiz-button {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #1a73e8; 
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.quiz-button:hover {
+  background-color: #155ab6; 
+  transform: scale(1.05);
+}
+
+
 
 
