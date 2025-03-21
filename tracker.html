@@ -2,66 +2,68 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cyber Education - Quiz</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script src="email.js"></script>
-  <script src="script.js"></script>
-  <script src="font.js"></script>
-  <script>
-    (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "sdGRnYvvnVtSwPrw0j8vh"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Education - Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="email.js"></script>
+    <script src="script.js"></script>
+    <script src="font.js"></script>
+    <script>
+        (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "sdGRnYvvnVtSwPrw0j8vh"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+    </script>
 
 </head>
 
 <body>
 
-  <!-- Navigation Bar  -->
-  <nav>
-    <ul>
-      <li><a href="home.html">Home</a></li>
-      <li><a href="courses.html">Courses</a></li>
-      <li><a href="quizzes.html">Quizzes</a></li>
-      <li><a href="news.html">Cyber News</a></li>
-      <li><a href="resources.html">Additional Resources</a></li>
-      <li><a href="tracker.html">Your Progress</a></li>
-    </ul>
-    <div class="logo-container">
-      <img src="logo.png" alt="Cyber Education Logo" class="small-logo">
-    </div>
-  </nav>
+    <!-- Navigation Bar  -->
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="quizzes.html">Quizzes</a></li>
+            <li><a href="news.html">Cyber News</a></li>
+            <li><a href="resources.html">Additional Resources</a></li>
+            <li><a href="tracker.html">Your Progress</a></li>
+        </ul>
+        <div class="logo-container">
+            <img src="logo.png" alt="Cyber Education Logo" class="small-logo">
+        </div>
+    </nav>
 
 
-  <h1>Your Quiz Progress</h1>
-  <div id="tracker-container"></div>
+    <h1>Your Quiz Progress</h1>
+    <div id="tracker-container"></div>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const container = document.getElementById('tracker-container');
-      const userEmail = localStorage.getItem('userEmail');
-      if (!userEmail) {
-        container.innerHTML = '<p>Please log in to view your progress.</p>';
-        return;
-      }
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('tracker-container');
+            const userEmail = localStorage.getItem('userEmail');
+            if (!userEmail) {
+                container.innerHTML = '<p>Please log in to view your progress.</p>';
+                return;
+            }
 
-      const progressItems = Object.keys(localStorage)
-        .filter(key => key.startsWith('progress_'))
-        .map(key => JSON.parse(localStorage.getItem(key)));
+            const progressItems = Object.keys(localStorage)
+                .filter(key => key.startsWith('progress_'))
+                .map(key => JSON.parse(localStorage.getItem(key)))
+                .filter(item => item.email === userEmail);
 
-      if (progressItems.length === 0) {
-        container.innerHTML = '<p>No completed quizzes yet.</p>';
-      } else {
-        const list = document.createElement('ul');
-        progressItems.forEach(item => {
-          const listItem = document.createElement('li');
-          listItem.textContent = `${item.quizTitle} — Latest Score: ${item.latestScore} (Completed on: ${item.completedAt})`;
-          list.appendChild(listItem);
+            if (progressItems.length === 0) {
+                container.innerHTML = '<p>No completed quizzes yet.</p>';
+            } else {
+                const list = document.createElement('ul');
+                progressItems.forEach(item => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = `${item.quizTitle} — Latest Score: ${item.latestScore} (Completed on: ${item.completedAt})`;
+                    list.appendChild(listItem);
+                });
+                container.appendChild(list);
+            }
         });
-        container.appendChild(list);
-      }
-    });
-  </script>
+    </script>
 </body>
+
 </html>
